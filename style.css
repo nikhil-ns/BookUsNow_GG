@@ -14,7 +14,7 @@ body{
 
 header{
     height: 100dvh;
-    width: 100vw;
+    width: 100dvw;
 }
 
 nav{
@@ -236,7 +236,6 @@ nav > .bottom{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-   
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
 }
@@ -263,4 +262,101 @@ nav > .bottom{
 }
 .img-container .second p{
     font-size: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+.upcoming-events{
+    height: 110vh;
+    width: 100vw;
+    border: 1px solid black;
+    margin-top: 5em;
+    padding: 0 10em;
+    overflow: hidden;
+}
+
+.box-container{
+    height: 100vh;
+    overflow-y: auto;
+    margin-top: 30px;
+    scrollbar-width: none;
+}
+
+.upcoming-events .box-container .box-events{
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 40px;
+}
+.upcoming-events .box-container::-webkit-scrollbar{
+    display: none;
+}
+.boxes{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.box-image{
+    /* border: 1px solid blue; */
+    height: 75%;
+    position: relative;
+    overflow: hidden;
+}
+.box-image > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    padding: 0 10px;
+}
+.box-image > h3{
+    position: absolute;
+    bottom: 15px;
+    background: rgba(10, 10, 10, 0.793);
+    color: white;
+    width: 94%;
+    margin-left: 10px;
+    padding: 0 7px;
+    border-radius: 8px;
+}
+.box-content{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+}
+.box-content .first, .box-content .second{
+    width: 45%;
+}
+.box-content .first h3{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.box-content .first p{
+    font-size: 12px;
+}
+.box-content .first p > img{
+    height: 14px;
+    width: 12px;
+}
+.box-content .second p{
+    margin-left: 20px;
+    font-size: 13px;
 }
