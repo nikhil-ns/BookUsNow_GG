@@ -104,6 +104,9 @@ input::placeholder{
 .nav-right{
     width: 20%;
 }
+.nav-right >img{
+    display: none;
+}
 .btn{
     padding: 5px;
     background: transparent;
@@ -370,17 +373,21 @@ nav > .bottom{
     }
 
     .categoies{
-        margin-left: -10px;
-        width: fit-content;
+       display: none;
     }
-    .categoies h2{
-        font-size: 12px;
-    }
-    .categoies > img{
-        display: none;
+    .search-bar{
+        margin-left: 20px;
     }
     .nav-right{
         width: 25%;
+    }
+    .btn:nth-child(1){
+        display: none;
+    }
+    .nav-right > img{
+        display: inline;
+        height: 22px;
+        width: 20px;
     }
     .btn{
         padding: 2px;
